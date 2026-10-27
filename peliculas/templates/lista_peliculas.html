@@ -1,0 +1,14 @@
+<h1>Películas</h1>
+
+{% for pelicula in peliculas %}
+
+    <h3>{{ pelicula.titulo }}</h3>
+
+    <img
+        src="{{ pelicula.imagen.url }}"
+        width="300"
+    >
+
+    <hr>
+
+{% endfor %}

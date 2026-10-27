@@ -1,0 +1,26 @@
+<h1>Registro Senasoft</h1>
+
+<form method="POST">
+
+    {% csrf_token %}
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre">
+
+    <br><br>
+
+    <label>Centro:</label>
+    <input type="text" name="centro">
+
+    <br><br>
+
+    <label>Categoria:</label>
+    <input type="text" name="categoria">
+
+    <br><br>
+
+    <button type="submit">
+        Guardar
+    </button>
+
+</form>

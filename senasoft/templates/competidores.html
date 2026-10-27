@@ -1,0 +1,21 @@
+<h1>Competidores Inscritos</h1>
+
+<table border="1">
+
+    <tr>
+        <th>Nombre</th>
+        <th>Centro</th>
+        <th>Categoria</th>
+    </tr>
+
+    {% for c in competidores %}
+
+    <tr>
+        <td>{{ c.nombre }}</td>
+        <td>{{ c.centro }}</td>
+        <td>{{ c.categoria }}</td>
+    </tr>
+
+    {% endfor %}
+
+</table>

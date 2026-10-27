@@ -24,3 +24,12 @@ def mostrar_productos2(request):
         'productos.html',
         {'productos': productos}
     )
+def actualizar_producto(request):
+
+    producto = Producto.objects.get(id=1)
+
+    producto.precio = 5000
+
+    producto.save()
+
+    return HttpResponse("Producto actualizado")
